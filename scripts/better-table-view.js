@@ -132,6 +132,8 @@ export class BetterRT {
     }
 
     static preUpdateRollTable(tableEntity, updateData, diff, tableId) {
+        setProperty(updateData, `flags.${BRTCONFIG.NAMESPACE}.${BRTCONFIG.TABLE_TYPE_KEY}`,
+            document.querySelector(`[data-appid='${Object.keys(tableEntity.apps)[0]}']`).getElementsByTagName("select")[0].value)
         setProperty(updateData, `flags.${BRTCONFIG.NAMESPACE}.${BRTCONFIG.LOOT_CURRENCY_KEY}`, updateData["currency-input"]);
         setProperty(updateData, `flags.${BRTCONFIG.NAMESPACE}.${BRTCONFIG.ACTOR_NAME_KEY}`, updateData["loot-name-input"]);
         setProperty(updateData, `flags.${BRTCONFIG.NAMESPACE}.${BRTCONFIG.ROLLS_AMOUNT_KEY}`, updateData["loot-rolls-amount-input"]);
