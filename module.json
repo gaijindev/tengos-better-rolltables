@@ -5,6 +5,34 @@
   "title": "Tengo's Better Rolltables",
   "version": "0.0.1.3",
   "author": "Tengoku",
+  "esmodules": [
+    "./scripts/brt-main.js"
+  ],
+  "styles": [
+    "./styles/brt.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "ko",
+      "name": "Korean",
+      "path": "lang/ko.json"
+    },
+    {
+      "lang": "pt-BR",
+      "name": "Português (Brasil)",
+      "path": "lang/pt-BR.json"
+    },
+    {
+      "lang": "es-ES",
+      "name": "Castellano",
+      "path": "lang/es-ES.json"
+    }
+  ],
   "url": "https://github.com/gaijindev/tengos-better-rolltables",
   "download": "https://github.com/gaijindev/tengos-better-rolltables/releases/download/v0.0.1.9/tengos-better-rolltables.zip",
   "manifest": "https://raw.githubusercontent.com/gaijindev/tengos-better-rolltables/master/module.json"
