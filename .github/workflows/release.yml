@@ -20,4 +20,4 @@ jobs:
           prerelease: false
           automatic_release_tag: ${{ github.ref }}
           files: |
-            tengos-better.rolltables.zip
+            tengos-better-rolltables.zip
