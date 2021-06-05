@@ -17,6 +17,7 @@ jobs:
         run: zip -r tengos-better-rolltables * -x ".github/*" ".idea/*" ".git/*" "*.iml"
       - name: Create Release
         uses: actions/create-release@v1
+        id: create_release
         env:
           GITHUB_TOKEN: ${{ github.token }}
         with:
