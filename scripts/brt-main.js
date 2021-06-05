@@ -29,6 +29,7 @@ Hooks.on("ready", () => {
 
 Hooks.on("renderRollTableConfig", BetterRT.enhanceRollTableView);
 Hooks.on("preUpdateRollTable", BetterRT.preUpdateRollTable);
+Hooks.on("postUpdateRollTable", BetterRT.postUpdateRollTable);
 
 function registerSettings() {
   let defaultLootSheet = "dnd5e.LootSheet5eNPC";

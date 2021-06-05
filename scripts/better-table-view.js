@@ -5,7 +5,6 @@ import { dropEventOnTable } from './core/brt-helper.js';
 export class BetterRT {
     static async enhanceRollTableView(rollTableConfig, html, rollTable) {
         const tableClassName = rollTable.cssClass;// "editable";
-        console.log(rollTableConfig, html, rollTable);
         const tableEntity = rollTableConfig.object;
         const selectedTableType = tableEntity.getFlag(BRTCONFIG.NAMESPACE, BRTCONFIG.TABLE_TYPE_KEY) || BRTCONFIG.TABLE_TYPE_NONE;
 
@@ -137,6 +136,11 @@ export class BetterRT {
         setProperty(updateData, `flags.${BRTCONFIG.NAMESPACE}.${BRTCONFIG.LOOT_CURRENCY_KEY}`, updateData["currency-input"]);
         setProperty(updateData, `flags.${BRTCONFIG.NAMESPACE}.${BRTCONFIG.ACTOR_NAME_KEY}`, updateData["loot-name-input"]);
         setProperty(updateData, `flags.${BRTCONFIG.NAMESPACE}.${BRTCONFIG.ROLLS_AMOUNT_KEY}`, updateData["loot-rolls-amount-input"]);
+    }
+
+    static postUpdateRollTable(a, b, c, d, e) {
+        console.error("data");
+        console.log(a, b, c, d, e);
     }
 
     static async showGenerateLootButton(htmlElement, tableEntity) {
