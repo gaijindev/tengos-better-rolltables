@@ -18,6 +18,6 @@ jobs:
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           prerelease: false
-          automatic_releases_tag: ${{ github.ref }}
+          automatic_release_tag: ${{ github.ref }}
           files:
             tengos-better.rolltables.zip
