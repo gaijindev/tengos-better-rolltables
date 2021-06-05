@@ -1,6 +1,6 @@
 <div class="form-group">
     <label>{{localize 'BRT.TypeLabel'}}</label>
-    <select {{#if disabled}}disabled{{/if}}>
+    <select {{#if disabled}}disabled{{/if}} name="type-selection">
         {{#select tengos-better-rolltables.table-type}}
         <option value="none">{{localize 'BRT.TypeDefault'}}</option>
         <option value="better">{{localize 'BRT.BetterTable'}}</option>
