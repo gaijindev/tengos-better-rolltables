@@ -14,9 +14,10 @@ jobs:
       - name: Zip Folder
         run: zip -r tengos-better-rolltables * -x ".github/*" ".idea/*" ".git/*" "*.iml"
       - name: Create Release
-        uses: "marvinpinto/action-automatic-releases@latest"
+        uses: marvinpinto/action-automatic-releases@latest
         with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
           prerelease: false
+          automatic_releases_tag: ${{ github.ref }}
           files:
             tengos-better.rolltables.zip
