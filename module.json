@@ -6,6 +6,6 @@
   "version": "0.0.1.3",
   "author": "Tengoku",
   "url": "https://github.com/gaijindev/tengos-better-rolltables",
-  "download": "",
+  "download": "https://github.com/gaijindev/tengos-better-rolltables/releases/download/v0.0.1.9/tengos-better-rolltables.zip",
   "manifest": "https://raw.githubusercontent.com/gaijindev/tengos-better-rolltables/master/module.json"
 }
