@@ -1,0 +1,8 @@
+{
+  "name": "tengos-better-rolltables",
+  "description": "A adaption of the better roll tables module from Ultrakorne",
+  "minimumCoreVersion": "0.8.6",
+  "title": "Tengo's Better Rolltables",
+  "version": "0.0.1",
+  "author": "Tengoku"
+}
