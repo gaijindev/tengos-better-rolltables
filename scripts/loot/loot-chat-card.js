@@ -7,7 +7,7 @@ import { BRTCONFIG } from '../core/config.js';
  */
 export class LootChatCard {
     /**
-     * @param {object} betterResults 
+     * @param {object} betterResults
      * @param {object} currencyData
      */
     constructor(betterResults, currencyData) {
@@ -22,7 +22,7 @@ export class LootChatCard {
         const lootCreator = new LootCreator(this.betterResults, this.currencyData);
         for (const item of this.betterResults) {
             this.numberOfDraws++;
-            /** we pass though the data, since we might have some data manipulation that changes an existing item, in that case even if it was initially 
+            /** we pass though the data, since we might have some data manipulation that changes an existing item, in that case even if it was initially
              * existing or in a compendium we have to create a new one */
             const data = await lootCreator.buildItemData(item);
             if (item.collection) {
@@ -94,7 +94,7 @@ export class LootChatCard {
             itemsData: this.itemsData,
             currency: currencyString
         }
-        const cardHtml = await renderTemplate("modules/better-rolltables/templates/loot-chat-card.hbs", chatCardData);
+        const cardHtml = await renderTemplate("modules/tengos-better-rolltables/templates/loot-chat-card.hbs", chatCardData);
 
         let flavorString;
         if (this.numberOfDraws > 1) {

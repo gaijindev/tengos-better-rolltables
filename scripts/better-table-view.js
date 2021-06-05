@@ -31,7 +31,7 @@ export class BetterRT {
         let divElement = document.createElement("div");
         let brtData = duplicate(tableEntity.data.flags);
         brtData.disabled = !rollTable.editable;
-        let selectTypeHtml = await renderTemplate("modules/better-rolltables/templates/select-table-type.hbs", brtData);
+        let selectTypeHtml = await renderTemplate("modules/tengos-better-rolltables/templates/select-table-type.hbs", brtData);
         divElement.innerHTML = selectTypeHtml;
 
         // tableViewClass.addEventListener('drop', async function (event) {
