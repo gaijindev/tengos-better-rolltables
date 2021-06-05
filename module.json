@@ -4,7 +4,7 @@
   "minimumCoreVersion": "0.8.6",
   "compatibleCoreVersion": "0.8.6",
   "title": "Tengo's Better Rolltables",
-  "version": "0.0.2.7",
+  "version": "0.0.2.8",
   "author": "Tengoku",
   "esmodules": [
     "./scripts/brt-main.js"
@@ -33,17 +33,9 @@
       "name": "Castellano",
       "path": "lang/es-ES.json"
     }
-  ],
-  "packs": [
-    {
-      "name": "brt-loot",
-      "label": "Loot Tables",
-      "system": "dnd5e",
-      "path": "./packs/loot-tables.db",
-      "entity": "Table"
-    }
+  ]
   ],
   "url": "https://github.com/gaijindev/tengos-better-rolltables",
-  "download": "https://github.com/gaijindev/tengos-better-rolltables/releases/download/v0.0.2.7/tengos-better-rolltables.zip",
+  "download": "https://github.com/gaijindev/tengos-better-rolltables/releases/download/v0.0.2.8/tengos-better-rolltables.zip",
   "manifest": "https://raw.githubusercontent.com/gaijindev/tengos-better-rolltables/master/module.json"
 }
