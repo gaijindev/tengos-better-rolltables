@@ -1,0 +1,24 @@
+on:
+  push:
+    tags:
+    - 'v*'
+
+name: Upload Release Asset
+
+jobs:
+  build:
+    name: Upload Release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Zip Folder
+        run: zip -r tengos-better-rolltables * -x ".github/*" ".idea/*" ".git/*" "*.iml"
+      - name: Release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./tengos-better.rolltables.zip
+          asset_name: tengos-better.rolltables.zip
+          asset_content_type: application/zip

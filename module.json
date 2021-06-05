@@ -4,5 +4,8 @@
   "minimumCoreVersion": "0.8.6",
   "title": "Tengo's Better Rolltables",
   "version": "0.0.1",
-  "author": "Tengoku"
+  "author": "Tengoku",
+  "url": "https://github.com/gaijindev/tengos-better-rolltables",
+  "download": "",
+  "manifest": "https://raw.githubusercontent.com/gaijindev/tengos-better-rolltables/master/module.json"
 }
