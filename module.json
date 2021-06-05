@@ -4,7 +4,7 @@
   "minimumCoreVersion": "0.8.6",
   "compatibleCoreVersion": "0.8.6",
   "title": "Tengo's Better Rolltables",
-  "version": "0.0.2.11",
+  "version": "0.0.2.12",
   "author": "Tengoku",
   "esmodules": [
     "./scripts/brt-main.js"
@@ -35,6 +35,6 @@
     }
   ],
   "url": "https://github.com/gaijindev/tengos-better-rolltables",
-  "download": "https://github.com/gaijindev/tengos-better-rolltables/releases/download/v0.0.2.11/tengos-better-rolltables.zip",
+  "download": "https://github.com/gaijindev/tengos-better-rolltables/releases/download/v0.0.2.12/tengos-better-rolltables.zip",
   "manifest": "https://raw.githubusercontent.com/gaijindev/tengos-better-rolltables/master/module.json"
 }

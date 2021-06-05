@@ -16,7 +16,7 @@ export class BetterResults {
         this.currencyData = this._generateCurrency(currencyString);
 
         for (let i = 0; i < this.tableResults.length; i++) {
-            const betterResults = await this._parseResult(this.tableResults[i]);
+            const betterResults = await this._parseResult(this.tableResults[i].data);
             //if a inner table is rolled, the result returned is undefined but the array this.tableResult is extended with the new results
 
             for (const r of betterResults) {
